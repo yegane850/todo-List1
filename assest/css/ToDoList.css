@@ -1,0 +1,81 @@
+body {
+    background: #d0b8d4;
+  }
+  .container {
+    max-width: 400px;
+    margin-top: 90px;
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+     border: 10px rgba(255, 255, 255, 0.3); 
+     padding: 40px; border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .search i {
+    position: absolute;
+  }
+  .search {
+    position: relative;
+  }
+  .icon {
+    padding: 10px;
+    left: 0;
+  }
+  .input-field {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="text"]:focus {
+    color: #7e7575;
+    border: none;
+    background: rgba(212, 150, 193, 0.5);
+    max-width: 400px;
+  }
+  .todos li {
+    background: #ca80dd;
+    color: rgb(255, 255, 255);
+  }
+  .btn{
+    background-color: rgb(176, 37, 189);
+    border: none;
+    text-align: center;
+    position: relative;
+    left: 15px;
+  }
+  
+  
+  .delete {
+    cursor: pointer;
+  }
+  
+  
+  .filtered{
+    display: none ;
+  }
+ 
+  
+  #delete-all {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  #todo-count {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    #delete-all {
+        width: 90%;
+    }
+  
+    #todo-count {
+        font-size: 16px;
+    }
+  }
+  
+  
+  

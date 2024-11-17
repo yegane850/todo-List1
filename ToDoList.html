@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/ToDoList.css" />
+    <link rel="stylesheet" href="./assest/css/toastify.min.css">
+    <link rel="stylesheet" href="./assest/font-awesome/font-awesome.min.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 id="title1" class="text-center mb-4">To Do List</h1>
+        <ul class="list-group todos mx-auto"></ul>
+        <form class="add text-center my-4" autocomplete="off">
+            <label>Add your New Todo...</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="add" required />
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="save-todo">ذخیره</button>
+                </div>
+            </div>
+        </form>
+        <button id="delete-all" class="btn btn-danger" data-toggle="modal" data-target="#clearAllModal">Clear All</button>
+        <div id="todo-count" class="mb-6"></div>
+    </div>
+    
+    <div class="modal fade" id="clearAllModal" tabindex="-1" aria-labelledby="clearAllModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clearAllModalLabel">Confirm Clear All</h5>
+                </div>
+                <div class="modal-body">
+                    آیا مطمئن هستید که می‌خواهید همه موارد را حذف کنید؟
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="confirm-delete-all">حذف همه</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assest/js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assest/js/toastify-js.js"></script>
+    <script src="./assest/js/ToDoList.js"></script>
+</body>
+</html>
